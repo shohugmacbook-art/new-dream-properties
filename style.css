@@ -1,0 +1,37 @@
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar ul.menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul.menu li a {
+        font-size: 16px;
+    }
+    .project-card {
+        margin: 10px;
+    }
+}
