@@ -1,0 +1,411 @@
+!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>New Dream Properties — নিরাপদ জমি বিনিয়োগ | পায়রা সেতু সংলগ্ন</title>
+  <meta name="description" content="New Dream Properties — Verified residential & investment plots near Payra Bridge, Barishal. Zero hidden cost. Book site visit via WhatsApp." />
+  <meta name="theme-color" content="#0B3D91" />
+
+  <!-- Social (Open Graph) -->
+  <meta property="og:title" content="New Dream Properties — নিরাপদ জমি বিনিয়োগ" />
+  <meta property="og:description" content="৪.৫ কাঠা × ৫ প্রিমিয়াম প্লট • রাস্তা সংলগ্ন • ডকুমেন্ট ক্লিয়ার • পায়রা সেতু সংলগ্ন" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts (use system fallbacks if offline) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#0B3D91;
+      --mango:#FF7A18;
+      --green:#19A974;
+      --charcoal:#222222;
+      --bg:#F7F9FB;
+      --card-radius:14px;
+      --maxwidth:1100px;
+      --shadow: 0 6px 20px rgba(10,20,40,0.08);
+      --glass: rgba(255,255,255,0.6);
+      --bn: "Noto Sans Bengali", "Poppins", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Bengali";
+      color:var(--charcoal);
+      background:linear-gradient(180deg,#fff,#f5f8fb 70%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Container */
+    .container{max-width:var(--maxwidth);margin:0 auto;padding:0 20px;}
+
+    /* Header / Nav */
+    header{
+      position:sticky;top:0;z-index:60;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));
+      border-bottom:1px solid rgba(12,30,60,0.04);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+    .logo{
+      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--navy),#0f4bb0);
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:Poppins;
+      box-shadow: var(--shadow);
+    }
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    nav a{color:var(--charcoal);text-decoration:none;font-weight:600}
+    .cta{background:var(--mango);color:#fff;padding:9px 14px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(255,122,24,0.18)}
+
+    /* Hero */
+    .hero{
+      min-height:72vh;
+      display:flex;align-items:center;
+      background-image: url('assets/pyara-bridge-hero.jpg');
+      background-size:cover;background-position:center;
+      position:relative;margin-bottom:28px;
+      border-bottom-left-radius:30px;border-bottom-right-radius:30px;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:0;background:linear-gradient(180deg, rgba(6,20,55,0.55), rgba(6,20,55,0.55));
+    }
+    .hero .container{position:relative;z-index:2;display:flex;gap:32px;align-items:center;padding-top:36px;padding-bottom:36px}
+    .hero-left{max-width:740px;color:#fff}
+    .hero h1{font-family:Poppins,Inter;font-weight:700;font-size:38px;margin:0 0 12px;line-height:1.05}
+    .hero p{margin:0 0 20px;font-size:17px;opacity:0.95}
+    .hero-actions{display:flex;gap:12px;align-items:center}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--mango);color:#fff;box-shadow:0 8px 28px rgba(255,122,24,0.18)}
+    .btn-ghost{border:2px solid rgba(255,255,255,0.9);color:#fff;background:transparent}
+
+    /* hero quick info */
+    .trust-row{margin-top:20px;display:flex;gap:14px;flex-wrap:wrap}
+    .trust-pill{background:rgba(255,255,255,0.08);padding:8px 12px;border-radius:999px;font-weight:600;font-size:14px;color:#fff;display:inline-flex;align-items:center;gap:8px}
+
+    /* Projects */
+    .projects{padding:44px 0;background:var(--bg)}
+    .projects h2{text-align:center;color:var(--navy);font-size:28px;margin:0 0 8px}
+    .projects p.lead{text-align:center;color:#5b6b86;margin:0 0 28px}
+
+    .grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+    }
+    .card{
+      background:#fff;border-radius:var(--card-radius);box-shadow:var(--shadow);overflow:hidden;
+      transition:transform .22s ease, box-shadow .22s ease;
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:190px;object-fit:cover;display:block}
+    .card-body{padding:16px}
+    .card h3{margin:0 0 8px;color:var(--navy);font-size:20px}
+    .card ul{list-style:none;padding:0;margin:0 0 12px}
+    .card ul li{padding-left:22px;position:relative;margin-bottom:8px;color:#333}
+    .card ul li::before{content:'✔';position:absolute;left:0;color:var(--green);font-weight:700}
+    .card .price{font-weight:700;color:#111;margin-bottom:10px}
+    .card .card-actions{display:flex;gap:10px;align-items:center}
+    .btn-sm{padding:8px 12px;border-radius:10px;font-weight:700;text-decoration:none}
+
+    /* Brochure section */
+    #brochure{padding:36px 0;background:#fff;border-radius:18px;margin:26px 0;box-shadow:0 6px 20px rgba(8,20,40,0.04)}
+    .bro-row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .bro-left{flex:1;min-width:260px}
+    .bro-right{width:340px;min-width:220px}
+
+    /* Contact */
+    footer{padding:34px 0 80px}
+    .contact-wrap{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+    .contact-card{flex:1;background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:18px;min-width:280px}
+    label{display:block;font-weight:600;margin-bottom:6px}
+    input[type="text"], input[type="tel"], input[type="email"], textarea, select{
+      width:100%;padding:10px;border-radius:10px;border:1px solid #e6eaf2;font-size:15px;margin-bottom:10px;
+    }
+    textarea{min-height:110px;resize:vertical}
+
+    .muted{color:#637088;font-size:14px}
+    .small{font-size:13px;color:#6b7280}
+
+    /* floating WhatsApp */
+    .whatsapp{
+      position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--green),#10b37a);
+      width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;z-index:80;box-shadow:0 14px 30px rgba(6,20,40,0.18)
+    }
+    .whatsapp a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px;font-weight:700}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:720px){
+      nav ul{display:none}
+      .hero{min-height:64vh;border-radius:0}
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:28px}
+      .hero p{font-size:15px}
+      .bro-row{flex-direction:column}
+      .container{padding:0 16px}
+    }
+
+    /* modal (basic) */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:100;padding:20px}
+    .modal.show{display:flex}
+    .modal-card{background:#fff;border-radius:12px;max-width:820px;width:100%;overflow:hidden}
+    .modal-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid #eef2f7}
+    .modal-body{padding:18px}
+    .close-btn{background:transparent;border:0;font-size:18px;cursor:pointer}
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"RealEstateAgent",
+    "name":"New Dream Properties",
+    "image":"https://example.com/assets/og-image.jpg",
+    "telephone":["+8801713171619","+8801747429495"],
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"সেক্টর-১১, রোড-১৮, হাউজ-৮৩, উত্তরা",
+      "addressLocality":"ঢাকা",
+      "postalCode":"1230",
+      "addressCountry":"BD"
+    },
+    "openingHours":"Mo-Su 09:00-21:00",
+    "url":"https://example.com"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <div class="logo">NDP</div>
+        <div>
+          <div style="font-weight:800;color:var(--navy);">New Dream Properties</div>
+          <div style="font-size:12px;color:#637088">পায়রা সেতু সংলগ্ন, বরিশাল</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#brochure">Brochure</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta" href="https://wa.me/8801713171619" target="_blank" rel="noopener">WhatsApp-book</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Hero — New Dream Properties">
+      <div class="container">
+        <div class="hero-left">
+          <h1>পায়রা সেতু সংলগ্ন নিরাপদ জমি — আপনার স্বপ্নের ভবিষ্যৎ</h1>
+          <p>৪.৫ কাঠা × ৫টি প্রিমিয়াম প্লট | রাস্তা সংলগ্ন • ডকুমেন্ট ক্লিয়ার • লঞ্চ অফার</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/8801713171619" target="_blank" rel="noopener">Book Site Visit (WhatsApp)</a>
+            <a class="btn btn-ghost" href="#brochure">Download Brochure</a>
+          </div>
+
+          <div class="trust-row" aria-hidden="true">
+            <span class="trust-pill">✅ Document Verified</span>
+            <span class="trust-pill">✅ Zero Hidden Cost</span>
+            <span class="trust-pill">✅ Site Visit Available</span>
+          </div>
+        </div>
+
+        <!-- Quick facts card -->
+        <div style="margin-left:auto;min-width:240px;background:rgba(255,255,255,0.95);padding:18px;border-radius:14px;box-shadow:var(--shadow);color:var(--charcoal)">
+          <div style="font-weight:700;color:var(--navy);margin-bottom:6px">Featured Launch Offer</div>
+          <div class="small muted">৫টি প্রিমিয়াম প্লট — প্রতিটি ৪.৫ কাঠা</div>
+          <div style="margin-top:12px;font-size:18px;font-weight:800">Launch Offer চলছে</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn btn-primary" href="https://wa.me/8801713171619" target="_blank" rel="noopener">ইনকোয়ারি করুন</a>
+            <a class="btn btn-ghost" href="#contact">সাইট ভিজিট শিডিউল</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured Plots — Payra Bridge Area</h2>
+      <p class="lead">পায়রা সেতু সংলগ্ন, ডকুমেন্ট ক্লিয়ার ও রাস্তা সংলগ্ন ৫টি প্রিমিয়াম প্লট।</p>
+
+      <div class="grid" role="list">
+        <!-- Card 1 -->
+        <article class="card" role="listitem">
+          <img src="assets/plot-image-1.jpg" alt="Plot 1 — ৪.৫ কাঠা প্রিমিয়াম প্লট">
+          <div class="card-body">
+            <h3>৪.৫ কাঠার প্রিমিয়াম প্লট</h3>
+            <ul>
+              <li>রাস্তা সংলগ্ন</li>
+              <li>ডকুমেন্ট ক্লিয়ার</li>
+              <li>ফার্স্ট কাম ফার্স্ট সার্ভ</li>
+            </ul>
+            <div class="price">Launch Offer — যোগাযোগ করুন</div>
+            <div class="card-actions">
+              <a class="btn-sm" href="#" onclick="openModal(1);return false;" aria-expanded="false">View Details</a>
+              <a class="btn-sm" href="https://wa.me/8801713171619" target="_blank" rel="noopener" style="background:var(--mango);color:#fff;border-radius:10px;padding:8px 10px;text-decoration:none">Contact via WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" role="listitem">
+          <img src="assets/plot-image-2.jpg" alt="Plot 2 — কোণের প্লট">
+          <div class="card-body">
+            <h3>৪.৫ কাঠা কোণের প্লট</h3>
+            <ul>
+              <li>দুই রাস্তার মোড়</li>
+              <li>লোকেশন সুবিধাজনক</li>
+              <li>লঞ্চ অফার চলছে</li>
+            </ul>
+            <div class="price">Best for Residential / Investment</div>
+            <div class="card-actions">
+              <a class="btn-sm" href="#" onclick="openModal(2);return false;">View Details</a>
+              <a class="btn-sm" href="https://wa.me/8801747429495" target="_blank" rel="noopener" style="background:var(--mango);color:#fff;border-radius:10px;padding:8px 10px;text-decoration:none">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" role="listitem">
+          <img src="assets/plot-image-3.jpg" alt="Plot 3 — রেসিডেনশিয়াল প্লট">
+          <div class="card-body">
+            <h3>৪.৫ কাঠা রেসিডেনশিয়াল প্লট</h3>
+            <ul>
+              <li>সাইট ভিজিট সুবিধা</li>
+              <li>ফিউচার–প্রুফ লোকেশন</li>
+              <li>ইনভেস্টরদের জন্য বেস্ট</li>
+            </ul>
+            <div class="price">Contact for Price & Docs</div>
+            <div class="card-actions">
+              <a class="btn-sm" href="#" onclick="openModal(3);return false;">View Details</a>
+              <a class="btn-sm" href="tel:+8801713171619" style="background:var(--mango);color:#fff;border-radius:10px;padding:8px 10px;text-decoration:none">Call</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Brochure -->
+    <section id="brochure" class="container">
+      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <h2 style="margin:0;color:var(--navy)">Project Brochure — Payra Bridge Plots</h2>
+          <p class="small muted" style="margin-top:8px">৫টি প্রিমিয়াম প্লট — প্রতিটি ৪.৫ কাঠা | ডকুমেন্ট ক্লিয়ার | ফার্স্ট কাম ফার্স্ট সার্ভ</p>
+
+          <ul style="margin-top:12px;color:#333">
+            <li style="margin-bottom:6px">✔ রাস্তা সংলগ্ন, উচ্চ রিজনাল কননেক্টিভিটি</li>
+            <li style="margin-bottom:6px">✔ সম্পূর্ণ নামজারি/রেজিস্ট্রি চেক</li>
+            <li style="margin-bottom:6px">✔ সাইট ভিজিট ও ছবি/নকশা সরবরাহ</li>
+          </ul>
+
+          <div style="margin-top:14px;display:flex;gap:10px">
+            <!-- Replace brochure.pdf with your real file in assets/ -->
+            <a class="btn btn-primary" href="assets/NewDream_Brochure.pdf" download>Download Brochure (PDF)</a>
+            <a class="btn btn-ghost" href="#contact">Request Price & Docs</a>
+          </div>
+        </div>
+
+        <div style="width:280px;min-width:220px">
+          <img src="assets/brochure-thumb.jpg" alt="Brochure thumbnail" style="width:100%;border-radius:12px;box-shadow:var(--shadow)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Map -->
+    <section id="contact" class="container" style="margin-top:28px">
+      <h2 style="color:var(--navy)">Contact & Visit Scheduler</h2>
+      <p class="small muted" style="margin-top:6px">সকাল ৯টা – রাত ৯টা • সেক্টর-১১, রোড-১৮, হাউজ-৮৩, উত্তরা, ঢাকা</p>
+
+      <div class="contact-wrap" style="margin-top:14px">
+        <div class="contact-card">
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">নাম</label>
+            <input id="name" name="name" type="text" placeholder="আপনার নাম লিখুন" required>
+
+            <label for="phone">মোবাইল / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+8801XXXXXXXXX" required pattern="^\+?0?9?[0-9]{9,13}$">
+
+            <label for="project">আগ্রহী প্রজেক্ট</label>
+            <select id="project" name="project">
+              <option value="Plot A">৪.৫ কাঠার প্রিমিয়াম প্লট</option>
+              <option value="Plot B">৪.৫ কাঠা কোণের প্লট</option>
+              <option value="Plot C">৪.৫ কাঠা রেসিডেনশিয়াল প্লট</option>
+            </select>
+
+            <label for="date">প্রিয় ভিজিট ডেট (ঐচ্ছিক)</label>
+            <input id="date" name="date" type="text" placeholder="DD-MM-YYYY">
+
+            <label for="message">মেসেজ (ঐচ্ছিক)</label>
+            <textarea id="message" name="message" placeholder="আপনার প্রশ্ন বা নোট লিখুন..."></textarea>
+
+            <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+              <a class="btn btn-ghost" href="https://wa.me/8801713171619" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </div>
+
+            <p class="small muted" style="margin-top:8px">বা কল করুন: <strong>+8801713171619</strong>, <strong>+8801747429495</strong></p>
+          </form>
+        </div>
+
+        <div style="flex:1;min-width:300px">
+          <div class="contact-card" style="padding:0;overflow:hidden">
+            <!-- Replace src with your Google Maps embed link for exact site -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0000000000005!2d90.000000!3d23.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzAwLjAiTiA5MMKwMDAnMDAuMCJF!5e0!3m2!1sbn!2sbd!4v0000000000000"
+              style="width:100%;height:320px;border:0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <div class="contact-card" style="flex:1">
+              <div style="font-weight:700;color:var(--navy)">Office</div>
+              <div class="small muted" style="margin-top:6px">সেক্টর-১১, রোড-১৮, হাউজ-৮৩, উত্তরা, ঢাকা-১২৩০</div>
+            </div>
+            <div class="contact-card" style="width:220px;min-width:160px">
+              <div style="font-weight:700;color:var(--navy)">Quick Contacts</div>
+              <div class="small" style="margin-top:6px">
+                <div>📱 +8801713171619</div>
+                <div>📱 +8801747429495</div>
+                <div style="margin-top:8px"><a href="mailto:info@newdreamproperties.com" style="color:var(--navy);text-decoration:none">info@newdreamproperties.com</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container" style="margin-top:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div style="font-weight:700;color:var(--navy)">New Dream Properties</div>
+        <div class="small muted">© <span id="year"></span> New Dream Properties • Zero Hidden Cost • Transparent Documentation</div>
+        <div style="display:flex;gap:10px">
+          <a href="#" class="small">Terms</a>
+          <a href="#" class="small">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <div class="whatsapp" aria
