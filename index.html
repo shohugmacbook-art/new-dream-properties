@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn">
 <head>
   <meta charset="utf-8" />
@@ -408,6 +408,63 @@
   </main>
 
   <!-- Floating WhatsApp -->
-  <div class="whatsapp" aria
+  <div class="whatsapp" aria-hidden="false">
+    <a href="https://wa.me/8801713171619" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  </div>
 
+  <!-- Modals (placeholders) -->
+  <div id="modal-1" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <strong>Plot Details</strong>
+        <button class="close-btn" onclick="closeModal(this)" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">Loading…</div>
+    </div>
+  </div>
+  <div id="modal-2" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <strong>Plot Details</strong>
+        <button class="close-btn" onclick="closeModal(this)" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">Loading…</div>
+    </div>
+  </div>
+  <div id="modal-3" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <strong>Plot Details</strong>
+        <button class="close-btn" onclick="closeModal(this)" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">Loading…</div>
+    </div>
+  </div>
 
+  <script>
+    // Set footer year
+    (function(){var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();})();
+
+    function openModal(id){
+      var modal=document.getElementById('modal-'+id);
+      if(modal){ modal.classList.add('show'); modal.setAttribute('aria-hidden','false'); }
+    }
+    function closeModal(button){
+      var modal=button.closest('.modal');
+      if(modal){ modal.classList.remove('show'); modal.setAttribute('aria-hidden','true'); }
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      var f=document.getElementById('contactForm');
+      var name=f.name.value||'';
+      var project=f.project.value||'';
+      var phone=f.phone.value||'';
+      var text=encodeURIComponent('Inquiry from '+name+' (Phone: '+phone+') about '+project);
+      window.open('https://wa.me/8801713171619?text='+text,'_blank');
+      return false;
+    }
+  </script>
+
+</body>
+</html>
